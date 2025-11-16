@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Marvel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #000; color: #fff; }
+        header, footer { background-color: #b30000; }
+        .card { background-color: #111; border: 1px solid #b30000; }
+        .btn-custom { background: #b30000; border: none; }
+        .btn-custom:hover { background: #ff1a1a; }
+    </style>
+</head>
+<body>
+
+<header class="text-center py-3">
+    <h1>Quiz Marvel</h1>
+</header>
+
+<main class="container my-4">
+    <section class="card p-3">
+        <form id="quizForm">
+
+            <p>1. Quem é o criador da armadura do Homem de Ferro?</p>
+            <input type="radio" name="p1" value="1" required> Tony Stark<br>
+            <input type="radio" name="p1" value="0"> Bruce Banner<br>
+
+            <p class="mt-3">2. Quem pode levantar o Mjolnir?</p>
+            <input type="checkbox" name="p2" value="1"> Thor<br>
+            <input type="checkbox" name="p2" value="1"> Capitão América<br>
+            <input type="checkbox" name="p2" value="0"> Hulk<br>
+
+            <p class="mt-3">3. Nome do metal do escudo do Capitão América:</p>
+            <input type="text" name="p3" class="form-control" placeholder="Digite aqui..." required>
+
+            <p class="mt-3">4. Vilão principal de Thanos:</p>
+            <select name="p4" class="form-select" required>
+                <option value="">Escolha...</option>
+                <option value="1">Thanos</option>
+                <option value="0">Loki</option>
+            </select>
+
+            <p class="mt-3">5. Torre dos Vingadores fica em:</p>
+            <input type="radio" name="p5" value="1" required> Nova York<br>
+            <input type="radio" name="p5" value="0"> Los Angeles<br>
+
+            <button class="btn btn-custom w-100 mt-3" type="submit">Enviar</button>
+        </form>
+
+        <div id="result" class="alert mt-3 d-none"></div>
+    </section>
+</main>
+
+<footer class="text-center py-2">
+    <small>Quiz Marvel - 2025</small>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
